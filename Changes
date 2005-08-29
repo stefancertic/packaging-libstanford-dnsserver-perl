@@ -1,0 +1,26 @@
+Revision history for Stanford::DNSserver
+
+1.2.0   Mon Sep 22 14:19:13 PDT 2003
+	 - Close all unnecessary sockets in TCP child.
+	 - wait(2) instead of waitpid(2) to stop TCP hangs.
+
+1.1.2   Thu May 15 16:55:28 PDT 2003
+	 - Update add_static() documentation to match 1.1.1.
+
+1.1.1   Thu May 15 16:26:49 PDT 2003
+	 - Allow multiple static records for any given domain and
+	   type.
+
+1.1.0	Fri Jan 24 13:03:55 PST 2003
+	 - Improved signal code.
+	 - Added 'dontwait' attribute to turn off SIGCHLD handler.
+
+1.0.0	Wed Jan 22 15:38:47 PST 2003
+	 - Initial public release.
+	 - Name changed to Stanford::DNSserver.
+	 - Added documentation to DNS.pm and DNSserver.pm.
+
+0.0.0	Thu Dec 19 20:26:45 EST 2002
+	 - Initial CVS checkin - would be version 1.0.0, but
+	   DNS.pm and NAMED.pm need POD info added.
+
