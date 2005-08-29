@@ -1,0 +1,6 @@
+libstanford-dnsserver-perl (1.2.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Russ Allbery <rra@stanford.edu>  Mon, 29 Aug 2005 14:51:41 -0700
+

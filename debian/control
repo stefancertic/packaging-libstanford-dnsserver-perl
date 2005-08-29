@@ -1,0 +1,22 @@
+Source: libstanford-dnsserver-perl
+Section: perl
+Priority: extra
+Build-Depends: debhelper (>= 4.0.2)
+Build-Depends-Indep: perl (>= 5.8.0-7)
+Maintainer: Russ Allbery <rra@stanford.edu>
+Standards-Version: 3.6.2
+
+Package: libstanford-dnsserver-perl
+Architecture: all
+Depends: ${perl:Depends}
+Description: DNS name server framework for Perl
+ Stanford::DNSserver is a framework for writing DNS servers that takes
+ care of the main processing loop and the DNS encoding and allows you to
+ return any data you wish by writing an arbitrary Perl program around it.
+ It is primarily used for writing DNS servers that return different query
+ results based on load-balancing criteria, but can be used for any
+ situation where dynamic, programmatic control of DNS returns is desired.
+ .
+ Despite the name, there is nothing Stanford-specific about this module.
+ .
+  Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
