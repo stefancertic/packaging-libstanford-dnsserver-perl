@@ -4,7 +4,11 @@ Priority: extra
 Build-Depends: debhelper (>= 7)
 Build-Depends-Indep: perl (>= 5.8.0-7)
 Maintainer: Russ Allbery <rra@stanford.edu>
+Bugs: mailto:rra@debian.org
 Standards-Version: 3.6.2
+Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
+Vcs-Git: git://git.eyrie.org/debian/dnsserver.git
+Vcs-Browser: http://git.eyrie.org/?p=debian/dnsserver.git
 
 Package: libstanford-dnsserver-perl
 Architecture: all
@@ -18,5 +22,3 @@ Description: DNS name server framework for Perl
  situation where dynamic, programmatic control of DNS returns is desired.
  .
  Despite the name, there is nothing Stanford-specific about this module.
- .
-  Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
