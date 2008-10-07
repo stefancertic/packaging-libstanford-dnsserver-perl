@@ -1,0 +1,3 @@
+# The upstream http://www.stanford.edu/~riepel/Stanford-DNSserver/ site
+# doesn't provide tarballs with the version in the name, so there isn't a
+# way for a watch file to check for a new version.

@@ -4,6 +4,7 @@ libstanford-dnsserver-perl (1.2.0-2) UNRELEASED; urgency=low
     - Use the minimal debhelper rules file.
   * Move the homepage into a real Homepage control field.
   * Add Bugs, Vcs-Git, and Vcs-Browser control fields.
+  * Add a watch file.
   * Rewrite debian/copyright in the new proposed format.
   * Remove versioned build-dependency on perl satisfied in sarge.
   * Update maintainer address.
