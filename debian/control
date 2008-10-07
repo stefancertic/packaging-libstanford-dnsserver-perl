@@ -3,7 +3,7 @@ Section: perl
 Priority: extra
 Build-Depends: debhelper (>= 7)
 Build-Depends-Indep: perl (>= 5.8.0-7)
-Maintainer: Russ Allbery <rra@stanford.edu>
+Maintainer: Russ Allbery <rra@debian.org>
 Bugs: mailto:rra@debian.org
 Standards-Version: 3.6.2
 Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
