@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 7)
 Build-Depends-Indep: perl
 Maintainer: Russ Allbery <rra@debian.org>
 Bugs: mailto:rra@debian.org
-Standards-Version: 3.6.2
+Standards-Version: 3.8.0
 Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
 Vcs-Git: git://git.eyrie.org/debian/dnsserver.git
 Vcs-Browser: http://git.eyrie.org/?p=debian/dnsserver.git
