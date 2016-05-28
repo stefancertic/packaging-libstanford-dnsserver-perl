@@ -1,18 +1,19 @@
 Source: libstanford-dnsserver-perl
 Section: perl
 Priority: extra
-Build-Depends: debhelper (>= 7)
+Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: perl
-Maintainer: Russ Allbery <rra@debian.org>
-Bugs: mailto:rra@debian.org
-Standards-Version: 3.8.0
+# original maintainer: Russ Allbery <rra@debian.org>
+Maintainer: František Dvořák <valtri@civ.zcu.cz>
+Bugs: mailto:valtri@civ.zcu.cz
+Standards-Version: 3.9.8
 Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
 Vcs-Git: git://git.eyrie.org/debian/dnsserver.git
 Vcs-Browser: http://git.eyrie.org/?p=debian/dnsserver.git
 
 Package: libstanford-dnsserver-perl
 Architecture: all
-Depends: ${perl:Depends}
+Depends: ${perl:Depends}, ${misc:Depends}
 Description: DNS name server framework for Perl
  Stanford::DNSserver is a framework for writing DNS servers that takes
  care of the main processing loop and the DNS encoding and allows you to

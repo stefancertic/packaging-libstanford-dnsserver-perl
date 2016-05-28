@@ -1,7 +1,6 @@
-Format-Specification:
- http://wiki.debian.org/Proposals/CopyrightFormat?action=recall&rev=233
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Stanford-DNSserver
-Upstream-Maintainer: Rob Riepel <riepel@networking.stanford.edu>
+Upstream-Contact: Rob Riepel <riepel@networking.stanford.edu>
 Upstream-Source: http://www.stanford.edu/~riepel/Stanford-DNSserver/
 
 Files: *
