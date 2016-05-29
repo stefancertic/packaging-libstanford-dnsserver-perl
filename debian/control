@@ -8,8 +8,10 @@ Maintainer: František Dvořák <valtri@civ.zcu.cz>
 Bugs: mailto:valtri@civ.zcu.cz
 Standards-Version: 3.9.8
 Homepage: http://www.stanford.edu/~riepel/Stanford-DNSserver/
-Vcs-Git: git://git.eyrie.org/debian/dnsserver.git
-Vcs-Browser: http://git.eyrie.org/?p=debian/dnsserver.git
+# original: git://git.eyrie.org/debian/dnsserver.git
+Vcs-Git: https://github.com/valtri/packaging-libstanford-dnsserver-perl
+# original: http://git.eyrie.org/?p=debian/dnsserver.git
+Vcs-Browser: https://github.com/valtri/packaging-libstanford-dnsserver-perl
 
 Package: libstanford-dnsserver-perl
 Architecture: all
