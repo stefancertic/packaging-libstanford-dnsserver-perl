@@ -1,0 +1,38 @@
+Add IPv6 support.
+
+Index: packaging-libstanford-dnsserver-perl/DNSserver.pm
+===================================================================
+--- packaging-libstanford-dnsserver-perl.orig/DNSserver.pm
++++ packaging-libstanford-dnsserver-perl/DNSserver.pm
+@@ -5,6 +5,7 @@ use strict;
+ 
+ use POSIX;
+ use IO::Socket;
++use IO::Socket::INET6;
+ use IO::Select;
+ use Stanford::DNS;
+ use Sys::Hostname;
+@@ -13,7 +14,7 @@ sub new {
+     my ($class, %args) = @_;
+ 
+     my $self = {
+-                listen_on => $args{listen_on} || [hostname()],
++                listen_on => $args{listen_on} ||       ['::'],
+                 port      => $args{port}      ||           53,
+                 defttl    => $args{defttl}    ||         3600,
+                 debug     => $args{debug}     ||            0,
+@@ -240,12 +241,12 @@ sub init {
+ 
+     foreach (@{$self->{listen_on}}) {
+ 
+-        my $u = new IO::Socket::INET LocalAddr => $_,
++        my $u = new IO::Socket::INET6 LocalAddr => $_,
+                                      LocalPort => $self->{port},
+                                      Proto     => 'udp'
+           or $self->abort("socket(udp): $!");
+ 
+-        my $t = new IO::Socket::INET LocalAddr => $_,
++        my $t = new IO::Socket::INET6 LocalAddr => $_,
+                                      LocalPort => $self->{port},
+                                      Proto     => 'tcp',
+                                      Listen    => 20,

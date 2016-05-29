@@ -1,8 +1,9 @@
 libstanford-dnsserver-perl (1.2.0-2+fd1) unstable; urgency=low
 
   * Packaging fixes and updates.
+  * Patch for IPv6 support.
 
- -- František Dvořák <valtri@civ.zcu.cz>  Sat, 28 May 2016 14:46:55 +0200
+ -- František Dvořák <valtri@civ.zcu.cz>  Sun, 29 May 2016 19:08:40 +0200
 
 libstanford-dnsserver-perl (1.2.0-2) unstable; urgency=low
 
