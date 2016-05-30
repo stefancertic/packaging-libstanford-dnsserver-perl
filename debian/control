@@ -15,7 +15,7 @@ Vcs-Browser: https://github.com/valtri/packaging-libstanford-dnsserver-perl
 
 Package: libstanford-dnsserver-perl
 Architecture: all
-Depends: ${perl:Depends}, ${misc:Depends}
+Depends: ${perl:Depends}, ${misc:Depends}, libio-socket-inet6-perl
 Description: DNS name server framework for Perl
  Stanford::DNSserver is a framework for writing DNS servers that takes
  care of the main processing loop and the DNS encoding and allows you to

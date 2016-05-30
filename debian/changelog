@@ -1,3 +1,9 @@
+libstanford-dnsserver-perl (1.2.0-2+fd2) unstable; urgency=low
+
+  * Add perl IO::Socket::INET6 dependency
+
+ -- František Dvořák <valtri@civ.zcu.cz>  Mon, 30 May 2016 17:24:58 +0200
+
 libstanford-dnsserver-perl (1.2.0-2+fd1) unstable; urgency=low
 
   * Packaging fixes and updates.
