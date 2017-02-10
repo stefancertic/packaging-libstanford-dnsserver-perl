@@ -14,7 +14,7 @@ $ns = new
 #		       port      =>          5300,
 		       defttl    =>            60,
 		       debug     =>             1,
-		       daemon    =>          "no",
+		       daemon    =>          "yes",
 		       pidfile   => "example.pid",
 
 #		       chroot    =>    "/var/tmp",

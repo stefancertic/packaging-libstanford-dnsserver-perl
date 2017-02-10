@@ -48,3 +48,5 @@ COPYRIGHT AND LICENSE
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
+  @2017 Stefan Ćertić Added Enum (NAPTR) Capabilities and Forking to handle requests
+  simultaneously. Implemented on: https://www.certic.info http://e164enum.eu

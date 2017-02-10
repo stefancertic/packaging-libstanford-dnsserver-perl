@@ -29,7 +29,7 @@ use Exporter;
   %Op2A %Err2A %Type2A %Class2A
 
   rr_A rr_CNAME rr_NS rr_PTR rr_NULL rr_MX rr_SOA rr_TXT rr_HINFO rr_RP
-  rr_WKS rr_LOC rr_LOC_raw rr_SRV
+  rr_WKS rr_LOC rr_LOC_raw rr_SRV rr_NAPTR
 
   dns_answer dns_simple_dname dn_expand
 
@@ -253,6 +253,53 @@ sub rr_TXT {
     }
     $res;
 }
+
+# Added Naptr
+
+sub rr_NAPTR {
+    my $nap_mcc = shift;
+    my $nap_mnc = shift;
+    my $res;
+    #my $res = '10 100 "u" "E2U+pstn:tel" "!^(.*)$!tel:\\1\;spn=22003\;mcc=220\;mnc=03!" .';
+        
+    $res .= pack("n2", "10", "100");
+                   
+    $res .= pack("C", length "u");
+    $res .= "u";
+                       
+    $res .= pack("C", length "E2U+pstn:tel");
+    $res .= "E2U+pstn:tel";
+                        
+    $res .= pack("C", length "!^(.*)\$!tel:\\1;spn=$nap_mcc$nap_mnc;mcc=$nap_mcc;mnc=$nap_mnc!");
+    $res .= "!^(.*)\$!tel:\\1;spn=$nap_mcc$nap_mnc;mcc=$nap_mcc;mnc=$nap_mnc!";
+
+    #$res .= "0";
+    $res .= pack("C", "0" );
+    #$res .= "1";
+                      
+    #$res .= $self->_name2wire ($self->{"replacement"});
+                     
+
+
+
+    #$res .= pack("n2", "10", "100"); 
+    #$res .= pack("C", length("u"));
+    #$res .= "u"; 
+    #$res .= pack("C", length("E2U+pstn:tel")); 
+    #$res .= "E2U+pstn:tel"; 
+    #$res .= pack("C", length("!^(.*)\$!tel:\\1;spn=22003;mcc=220;mnc=03!"));
+    #$res .= "!^(.*)\$!tel:\\1;spn=22003;mcc=220;mnc=03!"; 
+    #$res .= "1"; 
+    #return pack('Ca*Ca*', 1, "1", 1, "1");
+
+    #for (my $i = 0; $i < length $text; $i += 255) {
+    #    my $t = substr($text, $i, 255);
+    #    $res .= pack('Ca*', length $t, $t);
+    #}
+    return $res;
+}
+
+
 
 sub rr_HINFO {
     my ($cpu, $os) = @_;
