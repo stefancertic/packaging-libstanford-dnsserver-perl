@@ -60,7 +60,8 @@ sub answer_queries {
     my $UDP = getprotobyname('udp') or $self->abort("can't get udp: $!");
     my $TCP = getprotobyname('tcp') or $self->abort("can't get tcp: $!");
 
-# Forking
+# Forking - extending to support concurent requests while matching them.
+# Added by Stefan Certic, More info at https://www.certic.info
 
     while (1) { &{$self->{loopfunc}} if $run;
 
