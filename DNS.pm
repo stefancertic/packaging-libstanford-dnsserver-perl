@@ -257,7 +257,8 @@ sub rr_TXT {
 # Added Naptr
 
 sub rr_NAPTR {
-    # Adding mcc mnc for NAPTR / SPN. More info about enum at https://www.certic.info
+    # mcc mnc for NAPTR / SPN. More info about enum at https://www.certic.info
+    # Adding NAPTR support. More info at Stefan Certic
     my $nap_mcc = shift;
     my $nap_mnc = shift;
     my $res;
